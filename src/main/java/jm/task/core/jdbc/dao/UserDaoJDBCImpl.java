@@ -44,7 +44,6 @@ public class UserDaoJDBCImpl implements UserDao {
             System.err.println("Error save User");
             e.printStackTrace();
         }
-        System.out.println(String.valueOf("User с именем – " + name + " добавлен в базу данных"));
     }
 
     public void removeUserById(long id) {
@@ -72,7 +71,6 @@ public class UserDaoJDBCImpl implements UserDao {
             System.err.println("Error creating table");
             e.printStackTrace();
         }
-        System.out.println(userList.toString());
         return userList;
     }
 
